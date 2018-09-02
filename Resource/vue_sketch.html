@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>这里是Title</title>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/vue.min.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/sisyphus.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    </head>
+    <body>
+        <div id="vue_things">
+        </div>
+        <script>
+            var vue_things=new Vue({
+                el:'#vue_things',
+                data:
+                {
+                },
+                methods:
+                {
+                    a_get:function()
+                    {
+                        axios(
+                            {
+                                method:'get',
+                                url:'http://127.0.0.1:5000/',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                }                                
+                            })
+                            .then(function(response){
+                            })
+                            .catch(function(error){
+                            })
+                    },
+                    a_post:function()
+                    {
+                        axios({
+                            method:'post',
+                            url:'http://127.0.0.1:5000/',
+                            data:
+                            {
+                            },
+                            headers:
+                            {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                            }                             
+                        })
+                        .then(function(response){                         
+                        })
+                        .catch(function(error){
+                        })
+                    },
+                }
+            })
+        </script>
+    </body>
+</html>
