@@ -1,5 +1,5 @@
 # javascript_lessons
-这是「半栈工程师成长社群」Javascript课的github地址！
+这是Javascript课的github地址！
 
 ## 这是第三课HTML-JS基本原理演示页面的地址：
 https://half-stack.github.io/index.html
